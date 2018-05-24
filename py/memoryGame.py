@@ -47,7 +47,8 @@ class Memorygame(Minigame):
         self.lines = ["|1| |2| |3| |4|",
                       "",
                       "Which card held",
-                      "the character %s?"%(self.cards[self.answer-1])]
+                      "the character %s?"%(self.cards[self.answer-1]),
+                      "Select 1, 2, 3 or 4"]
         self.displayLines(style)
         start = timer()
         answer = self.getDigit()
